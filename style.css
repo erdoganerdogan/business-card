@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+box {
+    margin: 0px;
+}
+
+.main {
+    font-family: Inter, sans-serif;
+    text-align: center;
+    background: #1A1B21;
+    color: #F5F5F5;
+    font-weight: 400;
+    max-width: 375px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.footer {
+    background: #161619;
+    padding: 20px 20px 10px 20px;
+    display: block;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.footer a {
+    position: relative;
+    width:60px;
+    height:30px;
+    margin:0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+  margin-bottom: 5px;  
+}
+
+.info-frontend {
+    color: #F3BF99;
+    font-size: 14.8px;
+    margin-top: 5px;
+}
+
+.myportfolio {
+    color: #F5F5F5;
+    width: 228px;
+    font-size: 12.24px;
+    line-height: 150%;
+    text-decoration: none;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    
+}
+
+.buttons a {
+    color: black;
+    
+}
+
+.fa-envelope {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 9px 13px 9px 11px;
+    gap: 8px;
+    width: 115px;
+    background: #FFFFFF;
+    border-radius: 6px;
+    color: #374151;
+    
+}
+
+.fa-envelope a {
+    color: #374151;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.fa-linkedin-square {
+    margin: 20px;
+    justify-content: center;
+    padding: 9px 13px 9px 11px;
+    gap: 8px;
+    width: 115px;
+    background: #5093E2;
+    border-radius: 6px;
+}
+.fa-linkedin-square a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 600;
+    padding-left: 6px;
+}
+
+h2 {
+    line-height: 150%;
+    color: #F5F5F5;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.about, .interest {
+    text-align: left;
+    margin: 0px 50px 40px 50px;
+    
+}
+
+p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10.24px;
+    line-height: 150%;
+}
