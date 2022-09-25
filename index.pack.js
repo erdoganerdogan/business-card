@@ -391,7 +391,7 @@ if (process.env.NODE_ENV === 'production') {
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 exports.default = App;
 
@@ -418,14 +418,14 @@ var _Footer2 = _interopRequireDefault(_Footer);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function App() {
-    return _react2.default.createElement(
-        "div",
-        { className: "main" },
-        _react2.default.createElement(_Info2.default, null),
-        _react2.default.createElement(_About2.default, null),
-        _react2.default.createElement(_Interest2.default, null),
-        _react2.default.createElement(_Footer2.default, null)
-    );
+  return _react2.default.createElement(
+    "div",
+    { className: "App" },
+    _react2.default.createElement(_Info2.default, null),
+    _react2.default.createElement(_About2.default, null),
+    _react2.default.createElement(_Interest2.default, null),
+    _react2.default.createElement(_Footer2.default, null)
+  );
 }
 
 /***/ }),
@@ -482,7 +482,7 @@ if (process.env.NODE_ENV === 'production') {
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 exports.default = About;
 
@@ -493,20 +493,20 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function About() {
-    return _react2.default.createElement(
-        "div",
-        { className: "about" },
-        _react2.default.createElement(
-            "h2",
-            null,
-            "About"
-        ),
-        _react2.default.createElement(
-            "p",
-            null,
-            "I am a self-taught Junior Frontend Developer based in Scotland. I have experience developing websites and web apps using TypeScript, React, JavaScript, CSS3, HTML5, and Git/GitHub. I possess strong communication skills where I work well within a team or autonomously"
-        )
-    );
+  return _react2.default.createElement(
+    "div",
+    { className: "about" },
+    _react2.default.createElement(
+      "h2",
+      { className: "about-header" },
+      "About"
+    ),
+    _react2.default.createElement(
+      "p",
+      { className: "about-text" },
+      "I am a self-taught Junior Frontend Developer based in UK. I have experience developing websites and web apps using TypeScript, React, JavaScript, CSS3, HTML5, and Git/GitHub. I possess strong communication skills where I work well within a team or autonomously"
+    )
+  );
 }
 
 /***/ }),
@@ -546,7 +546,7 @@ function Footer() {
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 exports.default = Info;
 
@@ -557,49 +557,60 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Info() {
-    return _react2.default.createElement(
+  return _react2.default.createElement(
+    "div",
+    { className: "info-container" },
+    _react2.default.createElement(
+      "header",
+      { className: "info-header" },
+      _react2.default.createElement("img", {
+        className: "info-avatar",
+        src: "erdo-photo.jpg",
+        alt: "Erdogan Erdogan"
+      })
+    ),
+    _react2.default.createElement(
+      "div",
+      { className: "bio" },
+      _react2.default.createElement(
+        "h1",
+        { className: "name" },
+        "Erdogan Erdogan"
+      ),
+      _react2.default.createElement(
+        "p",
+        { className: "title" },
+        "Frontend Developer"
+      ),
+      _react2.default.createElement(
+        "a",
+        { className: "small", href: "https://erdo.netlify.app/", target: "_blank" },
+        "My Portfolio"
+      ),
+      _react2.default.createElement(
         "div",
-        null,
-        _react2.default.createElement("img", { src: "erdo-photo.jpg" }),
+        { className: "contacts" },
         _react2.default.createElement(
-            "h1",
-            null,
-            "Erdogan Erdogan"
+          "a",
+          {
+            className: "fa fa-envelope",
+            href: "mailto:erdoganerdogan@outlook.com",
+            target: "_blank"
+          },
+          "\xA0Email"
         ),
         _react2.default.createElement(
-            "p",
-            { className: "info-frontend" },
-            "Frontend Developer"
-        ),
-        _react2.default.createElement(
-            "a",
-            { className: "myportfolio", href: "https://erdo.netlify.app/", target: "_blank" },
-            "My Portfolio"
-        ),
-        _react2.default.createElement(
-            "div",
-            { className: "buttons" },
-            _react2.default.createElement(
-                "i",
-                { className: "fa fa-envelope" },
-                _react2.default.createElement(
-                    "a",
-                    { href: "mailto:erdoganerdogan@outlook.com", target: "_blank" },
-                    "Email"
-                )
-            ),
-            _react2.default.createElement(
-                "i",
-                { className: "fa fa-linkedin-square" },
-                " ",
-                _react2.default.createElement(
-                    "a",
-                    { href: "https://www.linkedin.com/in/erdogan-erdogan/", target: "_blank" },
-                    "LinkedIn"
-                )
-            )
+          "a",
+          {
+            className: "fa fa-linkedin-square",
+            href: "https://www.linkedin.com/in/erdogan-erdogan/",
+            target: "_blank"
+          },
+          "\xA0LinkedIn"
         )
-    );
+      )
+    )
+  );
 }
 
 /***/ }),
@@ -626,12 +637,12 @@ function Interest() {
         { className: "interest" },
         _react2.default.createElement(
             "h2",
-            null,
+            { className: "interest-header" },
             "Interest"
         ),
         _react2.default.createElement(
             "p",
-            null,
+            { className: "interest-text" },
             "Travel geek. Football lover. Tennis player. Coffee fanatic. Photographer."
         )
     );

@@ -17,21 +17,21 @@ export default function Info() {
           My Portfolio
         </a>
         <div className="contacts">
-          <i className="fa fa-envelope">
-            {" "}
-            <a href="mailto:erdoganerdogan@outlook.com" target="_blank">
-              Email
-            </a>
-          </i>
-          <i className="fa fa-linkedin-square">
-            {" "}
-            <a
-              href="https://www.linkedin.com/in/erdogan-erdogan/"
-              target="_blank"
-            >
-              LinkedIn
-            </a>
-          </i>
+          <a
+            className="fa fa-envelope"
+            href="mailto:erdoganerdogan@outlook.com"
+            target="_blank"
+          >
+            &nbsp;Email
+          </a>
+
+          <a
+            className="fa fa-linkedin-square"
+            href="https://www.linkedin.com/in/erdogan-erdogan/"
+            target="_blank"
+          >
+            &nbsp;LinkedIn
+          </a>
         </div>
       </div>
     </div>
